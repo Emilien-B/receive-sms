@@ -15,10 +15,10 @@ class message():
 
 
 def help():
-    return ' See documentation : '
+    return ' See documentation : https://github.com/Emilien-B/receive-sms '
 
 def version():
-    return 'jsp'
+    return '1.0.0'
 
 def get_messages(phone_number='12018577757'):
 
