@@ -1,5 +1,5 @@
 # 📖 Presentation
-`receive_sms` is a library which allows to receive SMS in python.
+`receive_sms` is a library which allows to receive SMS in python free and unlimited.
 
 # ⚙️ Use
 ```python3
