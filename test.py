@@ -1,4 +1,4 @@
-import receive_sms # Import the module
+import receive_sms # Import the library
 
 print('version: '+receive_sms.version()) # Print the version
 
