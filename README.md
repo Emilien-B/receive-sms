@@ -1,7 +1,15 @@
 # 📖 Presentation
 `receive_sms` is a library which allows to receive SMS in python free and unlimited.
-
-# ⚙️ Use
+# ⚙️ Installation
+You can download the file or use [PyPi](https://pypi.org/project/receive-sms/) :
+```
+pip install receive-sms
+```
+For getting informations, you can use : 
+```
+pip show receive-sms
+```
+# ⌨️ Use
 ```python3
 receive_sms.get_messages(phone_number='12018577757')
 ```
@@ -28,8 +36,6 @@ Returns the date of the message, imprecise (`datetime`)
 # 💾 Example
 ```python3
 import receive_sms # Import the library
-
-print('version: '+receive_sms.version()) # Print the version
 
 data = receive_sms.get_messages(phone_number = '12018577757') # Get messages sent to 12018577757
 
