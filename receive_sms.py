@@ -21,7 +21,7 @@ def version():
     return 'jsp'
 
 def get_messages(number_phone='12018577757'):
-    
+
     # Format number phone
     number_phone = number_phone.replace('+','').replace('-','').replace(' ','')
     # Get data
@@ -36,7 +36,7 @@ def get_messages(number_phone='12018577757'):
     response = []
     for a in response_raw:
         # Is it an ad ?
-        if not 'class="adsbygoogle"' in a:
+        if not 'class="adsbygoogle"' in a and not 'Click <a href="https://sms-online.co/get-coinbase" target="_blank">here</a> to receive your free Bitcoins (10$). <a href="https://sms-online.co/get-coinbase" target="_blank">https://www.coinbase.com/join/</a>' in a :
             response.append(a)
 
     # Format data
