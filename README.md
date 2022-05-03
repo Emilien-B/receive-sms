@@ -32,6 +32,8 @@ Returns the date of the message, imprecise (`datetime`)
 
 • The library uses [sms-online.co](https://sms-online.co/). 
 
+### The phone numbers you can use
+
 `+1 201-857-7757` - 🇺🇸 United States
 
 `+1 787-337-5275` - 🇵🇷 Puerto Rico
