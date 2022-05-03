@@ -6,6 +6,7 @@
 receive_sms.get_messages(phone_number='12018577757')
 ```
 Returns the last 100 messages sent to `phone_number` (newest to oldest). [How do I know which `phone_number` to put?](https://github.com/Emilien-B/receive-sms#the-phone-numbers-you-can-use)
+
 Messages are returned as a `message` class, here are its attributes:
 ```python3
 message.text
