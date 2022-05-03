@@ -23,7 +23,7 @@ Returns the phone number that sent the message (`str`)
 message.date
 ```
 Returns the date of the message, imprecise (`datetime`)
-# 💾 Exemple
+# 💾 Example
 ```python3
 import receive_sms # Import the library
 
