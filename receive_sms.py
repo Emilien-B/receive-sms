@@ -21,6 +21,8 @@ def version():
     return 'jsp'
 
 def get_messages(number_phone='12018577757'):
+    
+    # Format number phone
     number_phone = number_phone.replace('+','').replace('-','').replace(' ','')
     # Get data
     response_raw = requests.get(url='https://sms-online.co/receive-free-sms/'+number_phone)
@@ -61,7 +63,6 @@ def get_messages(number_phone='12018577757'):
         elif 'day' in date[1]:
             value *= 60*60*24
         date = datetime.datetime.now() - datetime.timedelta(seconds=value)
-        from_number = '+'+from_number
 
         # Create and return classes
         result.append(message(text=text,from_number=from_number,to_number=number_phone,date=date))
