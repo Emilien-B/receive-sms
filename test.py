@@ -1,7 +1,5 @@
 import receive_sms # Import the library
 
-print('version: '+receive_sms.version()) # Print the version
-
 data = receive_sms.get_messages(phone_number = '12018577757') # Get messages sent to 12018577757
 
 # Print informations of each message
