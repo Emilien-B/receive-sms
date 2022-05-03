@@ -21,6 +21,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     url="https://github.com/Emilien-B/receive-sms",
+    license_files = ('LICENSE.txt',),
     packages=find_packages(),
     install_requires=['requests'],
     keywords=['python','python3', 'sms', 'receive','message','free','unlimited','scraping'],
