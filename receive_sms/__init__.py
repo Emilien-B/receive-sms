@@ -59,6 +59,10 @@ def get_messages(phone_number='12018577757'):
             value *= 60*60
         elif 'day' in date[1]:
             value *= 60*60*24
+        elif 'month' in date[1]:
+            value *= 60*60*24*30,5
+        elif 'years' in date[1]:
+            value *= 60*60*24*30,5*365
         date = datetime.datetime.now() - datetime.timedelta(seconds=value)
 
         # Create and return classes
