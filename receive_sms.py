@@ -20,12 +20,12 @@ def help():
 def version():
     return 'jsp'
 
-def get_messages(number_phone='12018577757'):
+def get_messages(phone_number='12018577757'):
 
-    # Format number phone
-    number_phone = number_phone.replace('+','').replace('-','').replace(' ','')
+    # Format phone number
+    phone_number = phone_number.replace('+','').replace('-','').replace(' ','')
     # Get data
-    response_raw = requests.get(url='https://sms-online.co/receive-free-sms/'+number_phone)
+    response_raw = requests.get(url='https://sms-online.co/receive-free-sms/'+phone_number)
     
     if response_raw.status_code == 404:
         print('ERROR 404 : Bad phone number ('+help()+')')
@@ -65,6 +65,6 @@ def get_messages(number_phone='12018577757'):
         date = datetime.datetime.now() - datetime.timedelta(seconds=value)
 
         # Create and return classes
-        result.append(message(text=text,from_number=from_number,to_number=number_phone,date=date))
+        result.append(message(text=text,from_number=from_number,to_number=phone_number,date=date))
     return result
 
