@@ -1,7 +1,7 @@
 # 📖 Presentation
 `receive_sms` is a library which allows to receive SMS in python.
 
-# Use
+# ⚙️ Use
 ```python3
 receive_sms.get_messages(phone_number='12018577757')
 ```
@@ -40,7 +40,7 @@ for msg in data:
     print('\n') # Line break
 ```
 This file is [here](/test.py).
-# To know
+# ℹ️ To know
 • Phone numbers are public, everyone can see received messages.
 
 • Messages longer than 150 characters are split.
