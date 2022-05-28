@@ -1,6 +1,3 @@
-# https://sms-online.co/receive-free-sms/12018577757
-# 150 max
-
 import requests
 import datetime
 
